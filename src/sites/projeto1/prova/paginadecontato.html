@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocar</title>
+    <link rel="shorcut icon" href="../../../img/sport-car.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../fremework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+
+    <style>
+    
+    * {
+        padding: 0;
+        margin: 0;
+      }
+  
+      .cabeca{
+        background-color: rgb(39, 39, 122);
+      }
+      .CorAzul{
+            
+            background-color: rgb(39, 39, 122)
+        }
+        main{
+            flex: 1;
+
+        }
+        .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+        }
+
+    .produto{
+      text-align: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+        }
+
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+        }
+ 
+    </style>
+</head>
+    <body class="d-flex flex-column min-vh-100" style="overflow-x: hidden; "></body>
+    <!--CABEÇALHO-->
+        <section>
+            <div>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary; cabeca">
+                    <div class="container-fluid">
+                        <img src="../../../img/images-removebg-preview.png" alt="autocar" height="60px " >
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="autocarpaginainicial.html" style="color: white;">Inicio</a>
+                          <a class="nav-link active" aria-current="page" href="./paginadecarros.html" style="color: white;">Carros</a>
+                          <a class="nav-link" href="nossahistoria.html" style="color: white;">Nossa historia</a>
+                          <a class="nav-link" href="paginadecontato.html" style="color: white;">Entre em contato</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+
+    </section>
+    
+
+    <!--CONTEUDO-->
+    <main>
+        <section>
+                <div class="container">
+                    <h2 class="text-center mb-4" >Entre em Contato</h2>
+                    <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="ematl" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                    <br>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1">
+                    Enviar
+                    </button>
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" style="background-color: #ffffff;">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel1">Elegância Executiva</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Encaminhamos seu contato a central.
+                                    <br>
+                                    Por favor aguarde em seu email a resposta em ate 10 dias.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Ok</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+        
+
+
+    <!--RODAPE-->
+    <footer class="CorAzul footer mt-auto">
+        <ul class="nav flex-column align-items-center">
+
+            <img  src="../../../img/images-removebg-preview.png" alt="autocar" style="height: 100px; width:200px"    >
+
+          </ul>
+          <hr>
+        <ul class=" CorMarrom nav-tabs; nav justify-content-center" >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: white;">TODOS OS DIREITOS RESERVADOS@2025</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white;">Nossas redes</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Instagram</a></li>
+                <li><a class="dropdown-item" href="#">Facebook</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Links</a></li>
+              </ul>
+          </ul>
+   
+      </footer>
+
+
+    <script src="../../../fremework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
