@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocar</title>
+    <link rel="shorcut icon" href="../../../img/sport-car.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../fremework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+
+    <style>
+    
+    * {
+        padding: 0;
+        margin: 0;
+      }
+  
+      .cabeca{
+        background-color: rgb(39, 39, 122);
+      }
+      .CorAzul{
+            
+            background-color: rgb(39, 39, 122)
+        }
+        main{
+            flex: 1;
+
+        }
+        .produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+        }
+
+    .produto{
+      text-align: center;
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+        }
+
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+        }
+</style>
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <section>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary; cabeca">
+                <div class="container-fluid">
+                    <img src="../../../img/images-removebg-preview.png" alt="autocar" height="60px " >
+ 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="autocarpaginainicial.html" style="color: white;">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="./paginadecarros.html" style="color: white;">Carros</a>
+                      <a class="nav-link" href="nossahistoria.html" style="color: white;">Nossa historia</a>
+                      <a class="nav-link" href="paginadecontato.html" style="color: white;">Entre em contato</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+    </section>
+    
+
+    <!--CONTEUDO-->
+    <main>
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../../../img/Design sem nome (3).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Rolls-Royce Azure Phantom</h5>
+                      <p>Sinta a imponência à primeira vista: a icônica grade cromada e o azul radiante destacam toda a elegância e poder deste modelo único.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../../../img/Design sem nome (4).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Rolls-Royce Azure Phantom</h5>
+                      <p>Design imponente com portas de abertura diferenciada e acabamento azul metálico sofisticado.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./../../../img/Design sem nome (5).png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Rolls-Royce Azure Phantom</h5>
+                      <p>Interior luxuoso em couro azul, com painel digital de última geração e teto panorâmico.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+
+        </section>
+        <section>
+            <div class="py-5" style="background-color: #000000;" id="bolos">
+                <h2 class="text-center mb-4" style="color:#ffffff;font-family: Georgia, serif">NOSSO ESTOQUE</h2>
+                <hr class="color">
+                <br>
+
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="../../../img/Capturar.PNG"
+                            alt="car1">
+                        <h3 style="font-family: Georgia, serif">FERRARI ROMA 2025</h3>
+                        <p>R$  589.900,00 </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel1">Elegância Executiva</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Motor	3.8
+                                            <br>
+                                            Câmbio	Automatizada DCT , 8 marchas
+                                            <br>
+                                            Tração	Traseira
+                                            <br>
+                                            Potência	620 cv a 7500 rpm
+                                            <br>
+                                            Torque	76 kgfm a 3000 rpm (G)
+                                            <br>
+                                            Velocidade Máx.	320 km/h
+                                            <br>
+                                            0-100 km/h	3,4 s</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="../../../img/Capturar111.PNG"
+                            alt="car2">
+                        <h3 style="font-family: Georgia, serif">FERRARI 12CILINDRI SPIDER 2025</h3>
+                        <p>R$  649.900,00 </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Inovação Elétrica</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Motor	6.5
+                                            <br>
+                                            Câmbio	Automatizada DCT , 8 marchas
+                                            <br>
+                                            Tração	Traseira
+                                            <br>
+                                            Potência	830 cv a 9500 rpm
+                                            <br>
+                                            Torque	69,1 kgfm a 7750 rpm (G)
+                                            <br>
+                                            Velocidade Máx.	340 km/h
+                                            <br>
+                                            0-100 km/h	2,9 s</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="../../../img/Capturar000.PNG" alt="car3">
+                        <h3 style="font-family: Georgia, serif">FERRARI 296 GTB 2025</h3>
+                        <p>R$ 384.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel3">SUV Esportivo de Luxo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Motor	3.0
+                                            <br>
+                                            Câmbio	Automatizada DCT , 8 marchas
+                                            <br>
+                                            Tração	Traseira
+                                            <br>
+                                            Potência	830 cv a 8500 rpm (E)
+                                            <br>
+                                            Torque	74 kgfm a 6250 rpm (E)
+                                            <br>
+                                            Velocidade Máx.	330 km/h
+                                            <br>
+                                            0-100 km/h	2,9 s</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="../../../img/Capturar999.PNG" alt="car4">
+                        <h3 style="font-family: Georgia, serif">FERRARI 12CILINDRI 2025</h3>
+                        <p>R$ 914.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal4">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel4">Sofisticação Compacta</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Motor	6.5
+                                            <br>
+                                            Câmbio	Automatizada DCT , 8 marchas
+                                            <br>
+                                            Tração	Traseira
+                                            <br>
+                                            Potência	830 cv a 9500 rpm
+                                            <br>
+                                            Torque	69,1 kgfm a 7750 rpm (G)
+                                            <br>
+                                            Velocidade Máx.	340 km/h
+                                            <br>
+                                            0-100 km/h	2,9 s
+                                            </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="../../../img/Capturar777.PNG" alt="car5">
+                        <h3 style="font-family: Georgia, serif">FERRARI PUROSANGUE 2025</h3>
+                        <p>R$ 1.639.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal5">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel5">O Padrão do Luxo</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Motor	6.5
+                                            <br>
+                                            Câmbio	Automatizada DCT , 8 marchas
+                                            <br>
+                                            Tração	Integral permanente
+                                            <br>
+                                            Potência	725 cv a 8250 rpm
+                                            <br>
+                                            Torque	73 kgfm a 7750 rpm (G)
+                                            <br>
+                                            Velocidade Máx.	310 km/h
+                                            <br>
+                                            0-100 km/h	3,3 s</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img src="../../../img/Capturar666.PNG" alt="image">
+                        <p>R$ 934.900,00</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal6">
+                            Saiba mais!
+                        </button>
+                        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="background-color: #ffffff;">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel6">Design Esportivo e Elegante</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Motor	3.0
+                                            <br>
+                                            Câmbio	Automatizada DCT , 8 marchas
+                                            <br>
+                                            Tração	Traseira
+                                            <br>
+                                            Potência	830 cv a 8500 rpm (E)
+                                            <br>
+                                            Torque	74 kgfm a 6250 rpm (E)
+                                            <br>
+                                            Velocidade Máx.	330 km/h
+                                            <br>
+                                            0-100 km/h	2,9 s</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+     
+
+
+    </main>
+
+
+   <!--rodape-->
+
+   <footer class="CorAzul footer mt-auto">
+    <ul class="nav flex-column align-items-center">
+
+        <img  src="../../../img/images-removebg-preview.png" alt="autocar" style="height: 100px; width:200px"    >
+
+      </ul>
+      <hr>
+    <ul class=" nav-tabs; nav justify-content-center" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" style="color: white;">TODOS OS DIREITOS RESERVADOS@2025</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: white;">Nossas redes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Instagram</a></li>
+            <li><a class="dropdown-item" href="#">Facebook</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Links</a></li>
+          </ul>
+      </ul>
+
+  </footer>
+
+<script src="../../../fremework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
